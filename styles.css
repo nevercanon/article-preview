@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.drawers {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.text {
+    padding: 2rem 2.2rem 0rem;
+}
+
+.bold {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+footer {
+    position: relative;
+}
+
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.pic-and-name {
+    display: flex;
+}
+
+.michelle {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.name-section {
+    font-size: 0.8125rem;
+    margin-right: 3rem;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+}
+
+.icon-container {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-icon {
+    padding-bottom: 0.25rem;
+}
+
+.social {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    width: 100%;
+    top: -1rem;
+}
+
+.share {
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+    font-size: 0.8125rem;
+    letter-spacing: 5px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons img {
+    margin: 0 0.5rem
+}
+
+.icon-container-active {
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-icon-active {
+    padding-bottom: 0.25rem;
+    color: #fff;
+}
+
+.inactive {
+    display: none;
+}
+
+.icon-container:hover {
+    cursor: pointer;
+}
+
+.icon-container-active:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 45em) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 70%; 
+        position: relative;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .drawers {
+        width: 45%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .text-half {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bold {
+        font-size: 1.55rem;
+    }
+
+    .text {
+        padding: 2.5rem 3.5rem 0;
+    }
+    .description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        padding: 0 3.5rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .name-section {
+        font-size: 1rem;
+    }
+
+    .social {
+        align-items: center;
+        border-radius: 10px;
+        width: 15rem;
+        position: fixed;
+        top: 49%;
+        left: 70%;
+        box-shadow: 0 10px 15px hsl(210, 34%, 88%);
+    }
+
+    .share {
+        padding-bottom: 0.2rem;
+    }
+    .icon-container-active, .share-icon-active {
+        display: none;
+    }
+
+    .triangle {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);
+        position: absolute;
+        top: 3.25rem;
+        left: 6.5rem;
+    }
+
+}
+
+/* @media screen and (min-width: 75em) {
+    .social {
+        left: 15.25rem;
+    }
+}
+
+@media screen and (min-width: 77em) {
+    .social {
+        left: 16.25rem;
+    }
+}
+
+@media screen and (min-width: 79em) {
+    .social {
+        left: 17.25rem;
+    }
+}
+
+@media screen and (min-width: 77em) {
+    .social {
+        left: 16.25rem;
+    }
+} */
